@@ -377,20 +377,14 @@ body {
   color: #475569;
 }
 
-/* Social icons*/
+/* Social icons (placeholder emojis) */
 .social-icons span {
   margin-right: 10px;
   font-size: 1.4rem;
   cursor: pointer;
 }
-.social-icons img {
-  width: 30px;
-  height: 20px;
-  margin-right: 10px;
-  cursor:default;
-}
 
-/* Right side*/
+/* Right side - contact form */
 .contact-form {
   flex: 1 1 50%;
   display: flex;
