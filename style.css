@@ -11,7 +11,6 @@ html {
 
     body {
       font-family: Arial, sans-serif;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: creamywhite;
       color: #111827;
       padding: 2px;
@@ -25,6 +24,7 @@ html {
       color: rgb(16, 15, 15);
           }
 
+/* Logo (Name)*/
     .logo {
       margin-left: 30px;
       margin-top: 30px;
@@ -43,18 +43,18 @@ html {
       font-size: 1rem;
       padding: 8px 12px;
       margin-top: 40px;
-      border-radius: 5px;
       transition: background-color 0.3s;
     }
 
     nav a:hover {
       background-color: #D3D3D3;
+      border-radius: 5px; 
     }
 
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
       }
     }
 /* Description Section */
@@ -64,12 +64,13 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-}
 
+}
+/* Description Text */
 .hero-text {
-  padding-top: 50px;
+ padding-top: 50px;
  padding-left: 40px;
-  max-width: 600px;
+ max-width: 600px;
 }
 
 .hero h1 {
@@ -78,9 +79,8 @@ html {
 }
 
 .hero p {
-   color: rgb(17, 17, 17);
+  color: rgb(17, 17, 17);
   padding: 15px;
-  border-radius: 4px;
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
@@ -97,12 +97,12 @@ html {
   text-decoration: none;
   transition: 0.3s ease;
 }
-
+/* Black Button */
 .btn.black {
   background-color: #000;
   color: #fff;
 }
-
+/* White Button */
 .btn.white {
   background-color: transparent;
   border: 1px solid #ccc;
@@ -154,7 +154,7 @@ margin-bottom: 70px;
   padding-top: 50px;
   padding-bottom:120px ;
 }
-
+/* Each Card */
 .card {
   background-color: #fff;
   border: 1px solid #e5e7eb;
@@ -196,7 +196,7 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
+/* Project Cards */
 .project-cards {
   display:flex;
   flex-wrap:wrap;
@@ -252,7 +252,7 @@ body {
   color: #4b5563;
   margin: 0;
 }
-
+/* Small Tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -276,7 +276,7 @@ body {
 
 .skills-section {
   padding: 60px 0px;
-  background-color: rgba(207, 202, 202, 0.204);
+  background-color: rgba(207, 202, 202, 0.337);
   text-align: center;
 }
 
@@ -285,7 +285,7 @@ body {
   margin-bottom: 40px;
   color: #0f172a;
 }
-
+/* Skills Grids */
 .skills-grid {
   display: flex;
   justify-content: space-between;
@@ -317,7 +317,7 @@ body {
   margin-bottom: 10px;
   color: #475569;
 }
-/* Get In Touch */
+/* Get In Touch (Left Side)*/
 body {
   font-family: sans-serif;
   background-color: #f9fafb;
@@ -348,7 +348,7 @@ body {
   text-align: left;
 }
 
-/* Left side - contact info */
+/*contact info (Left Side) */
 .contact-info {
   flex: 1 1 40%;
   padding-right:100px;
@@ -377,7 +377,7 @@ body {
   color: #475569;
 }
 
-/* Social icons (placeholder emojis) */
+/* Social icons */
 .social-icons span {
   margin-right: 10px;
   font-size: 1.4rem;
@@ -433,5 +433,5 @@ body {
   margin: 0px;
   font-size: 1.2rem;
   color: #0a0b0b;
-  background-color: #f3f4f6;
+  background-color:  rgba(207, 202, 202, 0.337);
   text-align: center;}
