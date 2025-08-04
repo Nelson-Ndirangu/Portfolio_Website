@@ -2,6 +2,11 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+
+}
 /* Basic Reset */
 * {
       margin: 0px;
@@ -24,6 +29,7 @@ header {
 }
 
 .logo {
+  margin-top: 8px;
   font-size: 1.5rem;
   font-weight: bold;
 }
