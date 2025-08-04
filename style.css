@@ -420,7 +420,7 @@ body {
 /* Social linkss */
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 35px;
 }
 
 .social-links a {
