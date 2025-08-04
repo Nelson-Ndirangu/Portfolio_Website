@@ -2,61 +2,92 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* Basic Reset */
 * {
       margin: 0px;
       padding: 0;
       box-sizing: border-box;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: creamywhite;
-      color: #111827;
-      padding: 2px;
-    }
-
 /* Header Section */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: rgb(16, 15, 15);
-          }
+body {
+  font-family: Arial, sans-serif;
+}
 
-/* Logo (Name)*/
-    .logo {
-      margin-left: 30px;
-      margin-top: 30px;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: #000;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /* Navigation bar */
-    nav {
-      display: flex;
-      gap: 20px;
-    }
+nav {
+  display: flex;
+  gap: 20px;
+}
 
-    nav a {
-      color: rgb(5, 5, 5);
+nav a {
+   color: rgb(5, 5, 5);
       text-decoration: none;
       font-size: 1rem;
       padding: 8px 12px;
-      margin-top: 40px;
       transition: background-color 0.3s;
-    }
+}
 
-    nav a:hover {
-      background-color: #D3D3D3;
-      border-radius: 5px; 
-    }
+nav a:hover {
+    background-color: #D3D3D3;
+    border-radius: 5px; 
+}
 
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 30px;
-      }
-    }
+/* Hidden checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  height: 3px;
+  background: rgb(0, 0, 0);
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    background-color:rgb(252, 252, 252);
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+}
 /* Description Section */
 .hero {
   display: flex;
@@ -66,6 +97,7 @@ html {
   gap: 30px;
 
 }
+
 /* Description Text */
 .hero-text {
  padding-top: 50px;
@@ -84,6 +116,7 @@ html {
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
+
 /* Buttons for CV and Portfolio */
 .buttons {
   display: flex;
@@ -114,14 +147,15 @@ html {
 }
 /* My Image */
 .hero-image{
-    padding-right: 200px;
+    padding-right: 100px;
     padding-top: 100px;
 }
 .hero-image img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+  margin-left: 70px;
   object-fit: cover;
   border: 4px solid #f3f4f6;
 }
@@ -200,7 +234,7 @@ body {
 .project-cards {
   display:flex;
   flex-wrap:wrap;
-  justify-content: space-between;
+ justify-content: space-evenly;
   gap: 10px;
  min-height: fit-content;
  margin: auto;   
@@ -288,7 +322,7 @@ body {
 /* Skills Grids */
 .skills-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 40px;
   max-width: space-between;
