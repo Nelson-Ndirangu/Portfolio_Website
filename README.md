@@ -4,6 +4,10 @@ Overview:
 
 This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and professional information as a Full Stack Developer and Tech Professional.
 
+
+Live website link :https://nelson-ndirangu.github.io/Portfolio_Website/
+
+
 Features
 Responsive Design: Works on all device sizes
 
@@ -55,8 +59,8 @@ Change contact information in the Contact section
 
 Update the CV link with your own resume
 
-Live Demo
-[Add your live portfolio link here when deployed]
+Live Demo:
+https://nelson-ndirangu.github.io/Portfolio_Website/
 
 License
 This project is open-source and available under the MIT License.
