@@ -12,15 +12,26 @@
 <body>
 
 <!-- Header Section -->
-    <header>
-    <div class="logo">Ndirangu Maina</div>
-    <nav>
-      <a href="#about-me">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills-section">Skills</a>
-      <a href="#contact-section">Contacts</a>
-    </nav>
-  </header>
+ <header>
+  <div class="logo">Ndirangu Maina</div>
+
+  <!-- Hidden Checkbox -->
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- Label styled as hamburger -->
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <!-- Navigation buttons -->
+  <nav>
+    <a href="#about-me">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills-section">Skills</a>
+    <a href="#contact-section">Contacts</a>
+  </nav>
+</header>
 
 <!-- Description Section -->
    <section class="hero">
@@ -34,7 +45,8 @@
         <a href="https://docs.google.com/document/d/1BT3_hWnOlyONJKwBlrohGz4cOtilyTuouTXDvKNNHpY/edit?usp=sharing" class="btn white">Download CV</a>
       </div>
     </div>
-    <!-- My Image -->
+
+   <!-- My Image -->
     <div class="hero-image">
       <img src="images/NELSON-2.jpg" alt="developer icon" />
     </div>
