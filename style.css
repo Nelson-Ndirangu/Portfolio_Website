@@ -26,7 +26,7 @@ body {
 }
 /* header section */
 .header-section {
-  background-image: url("/images/header-section.jpg");
+  background-image: url("./images/header-section.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
