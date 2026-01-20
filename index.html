@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
-    <!-- Title favicon -->
+    <title>Nelson Maina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <!-- Title favicon -->
      <link rel="icon" href="images/title image.jpg" type="image/png">
      <!-- CSS -->
       <link rel="stylesheet" href="style.css" />
       <!-- Font Awesome CDN -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
+
 <body>
+<!-- Header -->
+ <div class="header-section">
+    <header class="header">
+        <div class="logo">Nelson Maina</div>
+        <nav class="nav" id="navMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+          <button class="cv-btn">Download CV</button>
+        </nav>
 
-<!-- Header Section -->
- <header>
-  <div class="logo">Ndirangu Maina</div>
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <img src="./images/hamburger-menu-32.png" alt="Menu" id="hamburgerIcon">
+        </div>
+      </header>
 
-  <!-- Hidden Checkbox -->
-  <input type="checkbox" id="menu-toggle" />
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Hello, I’m<br><span>Nelson Maina</span><br>A Backend Software Engineer</h1>
 
-  <!-- Label styled as hamburger -->
-  <label for="menu-toggle" class="menu-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <!-- Navigation buttons -->
-  <nav>
-    <a href="#about-me">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills-section">Skills</a>
-    <a href="#contact-section">Contacts</a>
-  </nav>
-</header>
+          <p>
+            I am Junior Backend Engineer with 2+ years of experience in designing, developing, and maintaining robust backend systems.<br> <br> 
+            Proficient in Javascript, Nodejs,SQL, MongoDB and PostgreSQL.  </p>
 
-<!-- Description Section -->
-   <section class="hero">
-    <div class="hero-text">
-      <h1>Full Stack Developer &<br>Tech Professional</h1>
-      <p>I build scalable web applications and solve complex problems with clean, efficient code.
-        Passionate about modern technologies and user centered designs.</p>
-  <!-- Buttons for CV and Projects -->
-        <div class="buttons">
-        <a href="#projects" class="btn black">View My Work</a>
-        <a href="https://docs.google.com/document/d/1BT3_hWnOlyONJKwBlrohGz4cOtilyTuouTXDvKNNHpY/edit?usp=sharing" class="btn white">Download CV</a>
-      </div>
-    </div>
+          <div class="hero-buttons">
+            <button class="primary-btn">View My Projects</button>
+            <button class="secondary-btn">Download CV</button>
+          </div>
+        </div>
 
-   <!-- My Image -->
-    <div class="hero-image">
-      <img src="images/NELSON-2.jpg" alt="developer icon" />
-    </div>
-  </section>
+        <div class="hero-image">
+          <img src="./images/NELSON-2.jpg" alt="Designer Photo">
+          <div class="experience-badge">
+            <strong>2+</strong>
+            <span>Years<br>Experience</span>
+          </div>
+        </div>
+      </section>
 
+ </div>
+ 
   <!-- About me Section -->
    <section class="about-me">
     <div id="about-me">
@@ -238,6 +244,6 @@
     <p>Nelson ©2025. All rights reserved.</p>
   </div>
 </footer>
-
+ <script src="script.js"></script>
 </body>
 </html>
